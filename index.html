@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SkillRadar Ingest</title>
+<meta name="description" content="SkillRadar Ingest: a personal, read-only tool that reads LinkedIn job-alert emails from one dedicated Gmail mailbox for private job-market research.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <h1>SkillRadar Ingest</h1>
+  <p class="sub">A personal, non-commercial job-market research tool.</p>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a></nav>
+</header>
+
+<h2>What it does</h2>
+<p>SkillRadar is a private research project that studies which skills and requirements Israeli
+employers ask for in Product Manager, Product Owner, System Analyst and AI Product Manager roles.
+It is not a job-application tool and does not apply to jobs, contact employers or post anything.</p>
+<p><strong>SkillRadar Ingest</strong> is the component that signs in with Google. Once a day it reads
+LinkedIn job-alert emails from a single dedicated Gmail mailbox that belongs to the project owner,
+extracts the job identifiers listed in each alert (job title, company, location and LinkedIn job ID),
+and stores them on the owner's own computer for later analysis.</p>
+
+<h2>Google permissions</h2>
+<ul>
+  <li>The app requests one permission only: <code>gmail.readonly</code> (read email messages and settings).</li>
+  <li>It cannot send, delete, label or modify any email.</li>
+  <li>It only fetches messages from the sender <code>jobalerts-noreply@linkedin.com</code>; other mail is not requested.</li>
+</ul>
+
+<h2>Who can use it</h2>
+<p>The app is used by its developer only, with one dedicated mailbox. It is not offered to the public,
+and there are no other users.</p>
+
+<p>Read the <a href="privacy.html">Privacy Policy</a> for details on what data is accessed, how it is stored,
+and when it is deleted.</p>
+
+<footer>
+  Contact: <a href="mailto:skillradar191@gmail.com">skillradar191@gmail.com</a><br>
+  SkillRadar is an independent personal project and is not affiliated with, endorsed by, or sponsored by
+  LinkedIn or Google.
+</footer>
+</main>
+</body>
+</html>
